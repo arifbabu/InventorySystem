@@ -1,0 +1,268 @@
+
+## composer create-project --prefer-dist laravel/laravel blog
+## composer create-project --prefer-dist "laravel/laravel:^10.0" blog
+
+composer create-project "laravel/laravel:^10.0" InventorySystem
+
+composer global require laravel/installer
+
+composer require phpmailer/phpmailer
+
+
+go to => php.ini-> remove the semicolon from the following line.  
+
+;extension=zip
+
+php artisan migrate:fresh --seed
+npm install
+npm audit fix --force
+npm run dev
+
+composer require laravel/ui
+php artisan ui bootstrap --auth
+
+php artisan tinker
+User::factory()->count(2)->create()
+
+=> Laravel Role & Permission creation
+composer require spatie/laravel-permission
+composer require laravelcollective/html
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+php artisan make:seeder PermissionTableSeeder
+
+
+
+=>>> Github Upload File
+echo "# InventorySystem" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/arifbabu/InventorySystem.git
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
