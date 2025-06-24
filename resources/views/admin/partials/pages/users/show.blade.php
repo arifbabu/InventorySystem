@@ -1,0 +1,51 @@
+@extends('admin.master')
+@section('content')
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-lg-12 col-sm-9 col-md-9">
+
+                <div class="row">
+                    <div class="col-lg-12 margin-tb">
+                        <div class="pull-right">
+                            <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 margin-tb">
+                        <div class="pull-left">
+                            <h1>User Show Page</h1>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                        <strong>Name:</strong>
+                                        {{ $user->name }}
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                        <strong>Email:</strong>
+                                        {{ $user->email }}
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                        <strong>Roles:</strong>
+                                        @if(!empty($user->getRoleNames()))
+                                        @foreach($user->getRoleNames() as $v)
+                                        <label class="badge badge-success">{{ $v }}</label>
+                                        @endforeach
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.container-fluid -->
+</section>
+<!-- /.content -->
+@endsection

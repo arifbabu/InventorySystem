@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'postion'),
 
     /*
     |--------------------------------------------------------------------------
@@ -168,6 +168,11 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        // Extra Feature Starts Below
+        Spatie\Permission\PermissionServiceProvider::class,
+        CyrildeWit\EloquentViewable\EloquentViewableServiceProvider::class,
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -183,6 +188,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
     ])->toArray(),
 
 ];

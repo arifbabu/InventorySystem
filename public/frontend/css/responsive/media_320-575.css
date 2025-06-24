@@ -1,0 +1,420 @@
+@media(min-width: 320px) and (max-width:575px) {
+  
+    /* Header Part Starts */
+  
+    .headerClass {
+      background-color: rgb(0, 0, 0);
+    }
+  
+    .nav-link {
+      font-family: 'Roboto Slab', serif !important;
+      font-weight: 300;
+      color: #ffffff !important;
+      letter-spacing: .5px;
+      font-size: 18px;
+      line-height: 38px;
+      position: relative;
+    }
+  
+    .navbar-toggler {
+      background-color: white;
+      padding: .2rem .8rem;
+      margin: .2rem .5rem;
+      font-size: 1.04rem;
+      line-height: 1;
+    }
+  
+    /* ----------------  */
+  
+    .nav-link::after {
+      position: absolute;
+      content: '';
+      width: 0%;
+      bottom: 0;
+      left: 0;
+      background: #ffffff;
+      transition: all linear 0.3s;
+      height: 5px;
+    }
+  
+    .nav-link:hover::after {
+      width: 100%;
+      height: 5px;
+      border-radius: 8px;
+    }
+  
+    .navbar-brand {
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'Roboto Slab', serif !important;
+    }
+  
+    .nav-link.active {
+      background: #d42323;
+      color: #444;
+    }
+  
+  
+    /* Responsive post Details Page Ends */
+  
+  
+    /* ======================== */
+    .navbar-brand {
+      color: black;
+      font-size: 15px;
+    }
+  
+    /* .navbar-brand {
+      color: white;
+      font-size: 25px;
+      font-weight: 600;
+      font-family: 'Roboto Slab', serif !important;
+    } */
+    .fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    /* Header Part Ends */
+  
+    /* HomePageDescriptionSection Starts Here */
+  
+  
+    .homePageDescription {
+      font-size: 15px;
+      /* font-family: 'Roboto Slab', serif !important; */
+      /* font-family: 'Crimson Text', serif !important; */
+      font-family: 'Abhaya Libre', serif !important;
+      font-weight: 300;
+      line-height: 1.4;
+      letter-spacing: .8px;
+      color: black;
+      margin-top: 113px;
+      padding: 0 15px;
+    }
+  
+    .HomePageDescriptionSection {
+      margin-top: -50px !important;
+    }
+  
+    /* HomePageDescriptionSection Ends Here */
+  
+  
+    /* Card Item Starts Here */
+  
+    /* Card Item Ends Here */
+  
+  
+    /* Category Item Starts Here */
+    .categoryMainDiv {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      /* box-shadow: 0 1px 6px rgb(255, 0, 0), 0 1px 4px rgb(229, 233, 0); */
+      box-shadow: 1px 1px 14px 2px grey;
+    }
+  
+    /* Category Item Ends Here */
+  
+    /* Popular post Starts Here */
+    .popularpostList {
+      font-size: 12px;
+    }
+  
+    /* Popular post Ends Here */
+  
+    /* Latest post Starts Here */
+    .latestpostList {
+      font-size: 12px;
+    }
+  
+    /* Latest post Ends Here */
+  
+  
+    /* Footer Parts Starts Here  */
+  
+    .footerNav ul li {
+      display: inline-block;
+    }
+  
+    .footerNav ul li a {
+      color: #000000;
+      line-height: 60px;
+      padding: 0 35px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: 'Roboto Slab', serif !important;
+      text-transform: capitalize;
+    }
+  
+    .footerNav {
+      position: relative;
+    }
+  
+    .footerNav::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      border: 1px solid black;
+    }
+  
+    .footerNav::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      top: 0;
+      left: 0;
+      border: 1px solid black;
+    }
+  
+    /* Footer Parts Ends Here  */
+  
+    /* postDetails Page Starts Here */
+  
+    /* post User Info Starts Here */
+    #user_info {
+      display: flex;
+      flex-direction: row;
+      border-radius: 5px;
+      height: 35px;
+    }
+  
+    #user_info a>p {
+      outline: 0;
+      text-decoration: none;
+      color: black;
+      font-family: 'Abhaya Libre', serif !important;
+      line-height: 35px;
+      font-weight: 700;
+      font-size: 12px !important;
+    }
+  
+    /* post User Info Ends Here */
+  
+    /* Category List Starts Here */
+  
+  
+    .categoryRow ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .categoryRow ul li a {
+      margin: 10px 3px;
+      border-radius: 18px;
+      color: white;
+      font-size: 15px;
+      background-color: rgb(2, 2, 2);
+      border: 0;
+      outline: 0;
+      text-decoration: none;
+      /* font-family: 'Roboto Slab', serif !important; */
+      font-family: 'Abhaya Libre', serif !important;
+    }
+  
+    .categoryRow ul li a:hover {
+      background-color: rgb(255, 0, 0);
+      color: white;
+    }
+  
+  
+    .list-group-item {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .fa-star {
+      margin-top: 5px;
+    }
+  
+    .list-group {
+      padding-left: 12px;
+    }
+  
+  
+    #List_ItemDescription {
+      margin-left: 10px;
+      font-size: 18px;
+      font-family: 'Abhaya Libre', serif !important;
+      text-decoration: none;
+      font-weight: 500;
+      outline: 0;
+      color: black;
+    }
+  
+    .listGroupHeader {
+      text-decoration: none;
+      font-family: 'Roboto Slab', serif !important;
+      font-weight: 700;
+      font-size: 25px;
+      justify-content: center;
+    }
+
+    .postImage{
+      margin-top: 25px;
+    }
+  
+    /* Category List Ends Here */
+  
+    /* ================   postDetails Page End Here  ============== */
+  
+    .mainColLg4 {
+      position: relative;
+    }
+  
+  
+    .displayNone {
+      display: none;
+      bottom: 0;
+      left: 0;
+    }
+  
+    /* CopyRight Starts Here */
+    .copyright {
+      color: red;
+      text-decoration: none;
+      font-family: 'Roboto Slab', serif !important;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  
+    /* CopyRight Ends Here */
+  
+  
+    /* Extra CSS Starts */
+    .fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .bottomFixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 32%;
+      height: 325px;
+      z-index: 1;
+    }
+  
+    .latestpostBottom {
+      width: 241px;
+    }
+  
+    .popularpostHome {
+      font-size: 12px;
+    }
+  
+    .latestpostBottom {
+      width: 241px;
+    }
+  
+    .col-md-3 {
+      width: 225px !important;
+    }
+  
+    .marginTop768 {
+      margin-top: 50px !important;
+    }
+  
+    /* Extra CSS Ends */
+  
+    .headerClass {
+      background-color: rgb(12, 0, 0);
+    }
+  
+  
+    .smallColumn {
+      width: 100% !important;
+    }
+  
+    .rightSidepostDetails {
+      position: relative;
+    }
+  
+  
+  
+    .popularpostHome {
+      font-size: 12px;
+    }
+  
+    .latestpostHome {
+      font-size: 12px;
+    }
+  
+  
+    
+    /* =========================  AboutUs Page Starts Here */
+  
+    .CategoryWisepostView {
+      color: black;
+      text-decoration: none;
+      font-family: 'Roboto Slab', serif !important;
+      font-weight: 700;
+      font-size: 18px;
+      position: relative;
+    }
+  
+    /* .CategoryWisepostView::after {
+      box-shadow: 1px 1px 10px 1px grey;
+      position: absolute;
+      content: "";
+      width: 62%;
+      bottom: -10px;
+      left: 66px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #002aff;
+      background-image: linear-gradient(43deg, #4158D0 0%, #c85050 46%, #FFCC70 100%);
+    } */
+  
+    /* =========================  AboutUs Page Ends Here ===================== */
+  
+  
+  
+    /* ========================= ContactUs Page Starts Here */
+  
+    .ContactPageForm{
+      color: black;
+      text-decoration: none;
+      font-family: 'Roboto Slab', serif !important;
+      font-weight: 700;
+      font-size: 10px;
+      /* background-color: #002aff; */
+      /* background-image: linear-gradient(43deg, #4158D0 0%, #c85050 46%, #FFCC70 100%); */
+      box-shadow: 1px 1px 10px 1px grey;
+      /* margin-top: 50px; */
+      margin: 0 15px;
+    }
+    .ContactPageForm .nameInputName{
+      margin-bottom: 7px !important;
+      margin-top: 1px !important;
+    }
+    .ContactPageForm .exampleInputEmail{
+      margin-bottom: 7px !important;
+      margin-top: 15px !important;
+    }
+    .ContactPageForm .exampleFormControlTextarea{
+      margin-bottom: 7px !important;
+      margin-top: 15px !important;
+    }
+    .ContactPageDescription{
+      margin-top: 65px !important;
+      color: black;
+      text-decoration: none;
+      font-family: 'Abhaya Libre', serif !important;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    
+    /* ========================= ContactUs Page Ends Here */
+  
+  }

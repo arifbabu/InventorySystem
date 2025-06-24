@@ -32,6 +32,7 @@ php artisan make:seeder PermissionTableSeeder
 
 
 
+
 =>>> Github Upload File
 echo "# InventorySystem" >> README.md
 git init
@@ -40,6 +41,53 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/arifbabu/InventorySystem.git
 git push -u origin main
+
+==========  existing gitFile =========
+
+git status
+
+git add .
+
+git commit -m "Commit Message Here must"
+
+git push -u origin main --force
+
+git push
+
+======================================
+
+
+
+=> add this into create_permission_tables 
+$table->string('group_name')->nullable();
+==> craete CategorySeeder & PermissionTableSeeder
+==> install CyrildeWit Package for Views count below  (https://github.com/cyrildewit/eloquent-viewable)
+
+composer require cyrildewit/eloquent-viewable
+php artisan vendor:publish --provider="CyrildeWit\EloquentViewable\EloquentViewableServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="CyrildeWit\EloquentViewable\EloquentViewableServiceProvider" --tag="config"
+
+// config/app.php
+
+'providers' => [
+    // ...
+    CyrildeWit\EloquentViewable\EloquentViewableServiceProvider::class,
+];
+
+
+=> add Pagination to AppServiceprovider
+
+
+
+=> add sweetalert2 for alert message  (https://realrashid.github.io/sweet-alert/install)
+composer require realrashid/sweet-alert
+
+=> Laravel Sitemap Creation (composer require spatie/laravel-sitemap)
+
+composer require spatie/laravel-sitemap
+php artisan vendor:publish --provider="Spatie\Sitemap\SitemapServiceProvider" --tag=sitemap-config
+
+
 
 
 
